@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Compute Continuum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="page_title" id="about">
+    <h1>A Runtime Infrastructure for the Compute Continuum</h1>
+    <menu class="top_menu">
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </menu>
+  </div>
+
+  <div class="section" id="vision">
+    <h2>The vision</h2>
+    <p>The key traits of the envisioned <em>Compute Continuum</em>
+      are the following.
+    </p>
+    <p></p>
+    <ul class="vision_traits">
+      <li>
+        <div>
+          Interactions, either between applications, components, and users,
+          should leverage Web protocols, such as HTTP/3.
+        </div>
+      </li>
+      <li>
+        <div>
+          Edge and Cloud resources should be accessed as a single pool
+          of resources, <em>continuous</em> and seamless.
+        </div>
+      </li>
+      <li>
+        <div>
+          Application components should be able to <em>migrate</em>,
+          opportunistically, across the entire resource pool.
+        </div>
+      </li>
+    </ul>
+    <img src="img/architecture.png" alt="Architecture of the Continuum. " class="image">
+  </div>
+
+  <div class="section" id="roadmap">
+    <h2>Project's roadmap</h2>
+    <p>
+      The construction of a runtime infrastructure for the <em>Compute Continuum</em>
+      will happen in three steps.
+    </p>
+    <ul class="roadmap_list">
+      <li>
+        <h4>Construction of a node</h4>
+        <ul class="standard_list">
+          <li>Support <em>migration</em> in a Wasm runtime</li>
+          <li>Deploy the enhanced runtime over a RTOS</li>
+          <li>Migrate components with active dependencies</li>
+        </ul>
+      </li>
+      <li>
+        <h4>Construction of a cluster</h4>
+        <ul class="standard_list">
+          <li>Select and deploy an orchestration engine</li>
+          <li>Extend the orchestrator with <em>Continuum</em>-native functionalities</li>
+        </ul>
+      </li>
+      <li>
+        <h4>Benchmarking</h4>
+        <ul class="standard_list">
+          <li>Benchmark selection or realization</li>
+          <li>Experimental evaluation over the infrastructure</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section" id="scenarios">
+    <h2>Scenarios</h2>
+    Several application scenarios might benefit from this runtime infrastructure.
+    <ul class="scenarios_list">
+      <li>
+        <h5>High-Performance Computing</h5>
+        To leverage an increasingly vast pool of computing resources, both in Cloud and Edge, for High-Performance Computing (HPC) applications
+      </li>
+      <li>
+        <h5>Energy Harvesting Systems</h5>
+        Migrating computations in the presence of low-energy phases, instead of suspend them,
+        aiming at a higher system utilization
+      </li>
+    </ul>
+  </div>
+
+  <div class="section" id="contacts">
+    <h2>Contacts</h2>
+    This project is supported by the University of Padova, Italy.
+    <br><br>
+    Edoardo Tinto,<br>
+    <a href="https://www.unipd.it/en/dm">Department of Mathematics</a>, <a href="https://www.unipd.it/en/">University of Padova</a>,<br>
+    <a href="mailto:edoardo.tinto@phd.unipd.it">edoardo.tinto@phd.unipd.it</a>.<br>
+  </div>
+
+  <footer>
+    <p>Written by Edoardo Tinto, April 2024</p>
+  </footer>
+
+</body>
+
+</html>
