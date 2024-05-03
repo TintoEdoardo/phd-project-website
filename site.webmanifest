@@ -1,9 +1,9 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "TheComputeContinuum",
+  "name": "The Compute Continuum",
   "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
+    "src": "",
+    "type": "",
     "sizes": "192x192"
   }],
   "start_url": "/?utm_source=homescreen",
