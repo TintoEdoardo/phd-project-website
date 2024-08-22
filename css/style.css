@@ -112,7 +112,7 @@ menu.top_menu {
   float: left;
   list-style-type: none;
   width: 25%;
-  min-height: 10em;
+  min-height: 12em;
   margin: 2% 2% 2% 2%;
   padding: 2% 2% 2% 2%;
   background-color: rgb(250, 250, 240);
@@ -128,6 +128,14 @@ menu.top_menu {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  font-size: 0.8em;
+}
+
+.standard_list a {
+  font-size: 0.8em;
+}
+
+.inner_list {
   font-size: 0.8em;
 }
 
