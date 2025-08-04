@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Compute Continuum</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta name="description" content="Research project on a real-time Compute Continuum">
+  <meta name="author" content="Edoardo Tinto">
 
-  <meta property="og:title" content="">
+  <meta property="og:title" content="The Compute Continuum">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:image" content="img/logo.png">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="img/logo.png" sizes="any">
+  <link rel="icon" href="img/logo.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/logo.png">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -45,20 +46,18 @@
     <ul class="vision_traits">
       <li>
         <div>
-          Interactions, either between applications, components, and users,
-          should leverage Web protocols, such as HTTP/3.
+          Interactions over Web-level protocols
         </div>
       </li>
       <li>
         <div>
-          Edge and Cloud resources should be accessed as a single pool
-          of resources, <em>continuous</em> and seamless.
+          Edge and Cloud as a seamless, <em>continuous</em>, infrastructure
         </div>
       </li>
       <li>
         <div>
-          Application components should be able to <em>migrate</em>,
-          opportunistically, across the entire resource pool.
+          Opportunistic and <em>live</em> migration of application components <br>
+          <small>In response to changes in the physical world</small>
         </div>
       </li>
     </ul>
@@ -68,15 +67,14 @@
   <div class="section" id="roadmap">
     <h2>Project's roadmap</h2>
     <p>
-      The construction of a runtime infrastructure for the <em>Compute Continuum</em>
-      will happen in three steps.
+      The construction of a runtime infrastructure for the <em>Compute Continuum</em>:
     </p>
     <ul class="roadmap_list">
       <li>
         <h4>Construction of a node</h4>
         <ul class="standard_list">
-          <li>Support <em>live migration</em> in a Wasm runtime: <br>
-            <a href="https://github.com/TintoEdoardo/wasm-micro-runtime-interp-migration/tree/dev/migration_interp">A migration-capable Wasm interpreter</a>
+          <li>Supporting <em>live migration</em> for Wasm computations: <br>
+            <a href="https://github.com/TintoEdoardo/wasm-tools/tree/develop">Migrating compiled module [GitHub]</a>
           </li>
           <li>Three deployment scenarios <br>
             <p class="inner_list">(1) <em>Bare-metal</em>, without an OS <br></p>
@@ -88,8 +86,14 @@
       <li>
         <h4>Construction of a cluster</h4>
         <ul class="standard_list">
-          <li>Select and deploy an orchestration engine</li>
-          <li>Extend the orchestrator with <em>Continuum</em>-native functionalities</li>
+          <li>Building A two-level orchestration strategy <br>
+              <a href="https://github.com/TintoEdoardo/orchestrating-migrating-computations-poc">Application-level orchestration of migrating computations [GitHub]</a>
+              <br> <p>In collaboration with <a href="https://www.mdu.se/en/malardalen-university/staff?id=aps01">Prof. Alessandro Papadopoulos</a> @ MDU</p>
+          </li>
+          <li>Enabling <em>live migration</em> in <a href="https://www.oakestra.io/">Oakestra</a> <br>
+              <a href="https://github.com/TintoEdoardo/wasm-migrate-commands">New commands for Oakestra [GitHub]</a>
+              <br> <p>In collaboration with <a href="https://www.giovannibartolomeo.it/">Giovanni Bartolomeo</a> @ TUM </p>
+          </li>
         </ul>
       </li>
       <li>
@@ -111,9 +115,12 @@
         To leverage an increasingly vast pool of computing resources, both in Cloud and Edge, for High-Performance Computing (HPC) applications
       </li>
       <li>
+        <h5>Real-Time Systems</h5>
+        Live migrations improves adaptability and reconfigurability in response to changes in the physical world
+      </li>
+      <li>
         <h5>Energy Harvesting Systems</h5>
-        Migrating computations in the presence of low-energy phases, instead of suspending them,
-        aiming at a higher system utilization
+        Migrating computations in the presence of low-energy phases, aiming for higher system utilization
       </li>
     </ul>
   </div>
@@ -123,8 +130,12 @@
 
     <ul>
       <li>
-        E. Tinto, T. Vardanega, <i>A runtime infrastructure for the Continuum of Computing</i>, HPDC ’24 PhD Symposium,
-        <a href="docs/HPDC_24___Phd_Symposium_Presentation.pdf" target="_tab">PDF</a>.
+        E. Tinto, L. Marchiori, T. Vardanega, <i>Live migration of compiled Wasm modules across the Compute Continuum</i>, <br>Ada-Europe International Conference ’25,
+      </li>
+      <li>
+        E. Tinto, T. Vardanega, <i>A runtime infrastructure for the Continuum of Computing</i>, <br>HPDC ’24 PhD Symposium,
+        <a href="https://doi.org/10.1145/3625549.3658832">[article]</a>
+        <a href="docs/HPDC_24___Phd_Symposium_Presentation.pdf" target="_tab">[presentation]</a>.
       </li>
     </ul>
   </div>
@@ -139,7 +150,7 @@
   </div>
 
   <footer>
-    <p>Written by Edoardo Tinto, April 2024</p>
+    <p>Written by Edoardo Tinto, August 2025</p>
   </footer>
 
 </body>
